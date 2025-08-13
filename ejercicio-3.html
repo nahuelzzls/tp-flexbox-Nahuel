@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloques paralelos</title>
+    <style>
+    main{
+       display: flex;
+      align-items: flex-end;
+       gap: 3px;
+    }
+    div{
+        flex: 1 1 auto;
+        width: 100px;
+        border: 2px solid white;
+        background-color:rgba(123,198,199,0.8);
+        padding: 12px 24px;
+        height: 170px;
+        
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div>Solo tengo una línea</div>
+        <div>Este texto ocupa algo más que el de al lado Son dos lineas</div>
+        <div>Este es más largo que los otros dos y ocupan más líeas       Pero todos estos bloques tienen la misma altura y anchura, ceecen o de contraen para repartirse el ancho disponible</div>
+    </main>
+</body>
+</html>
