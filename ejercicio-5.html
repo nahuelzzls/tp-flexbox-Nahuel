@@ -1,25 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un sidebar a la izquierda del contenido</title>
-</head>
+<meta charset="utf-8">
+<title>Ejercicio 5-Un sidebar a la izquierda</title>
 <style>
-    main{
-        gap: 3px;
-    }
-    div{
-     height: 3000px;
-    }
-    article{
+  .main{
+    display:flex;
+    gap: 2px;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }  
+  .main .g1,
+  .main .g2{
+    height: 100vh;
+    padding: 12px 24px;
+  }
+  .main .g1{
+    background: rgb(133,215,239);
+    flex: 1;
+  }
+  .main .g2{
+    background: rgb(193,219,210);
+    flex: 4;
+  }
 
-    }
 </style>
+</head>
 <body>
-    <main>
-        <div>contenido lateral</div>
-        <div></div>
-    </main>
+<div class="main">  
+  <div class="g1">contenido lateral</div>
+  <div class="g2">Esto sería el contenido principal</div>
+</div>  
 </body>
 </html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card con flexbox-ejercicio 7</title>
+    <style>
+
+    .main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-family: sans-serif;
+    height: 300px;
+
+  }
+  .medio{
+    flex: 4;
+    padding: 10px;
+
+  }
+  .arriba{     
+    flex: 1;
+    background: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .abajo{
+    flex: 1;
+    background: darkgray;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+  }
+  </style>
+</head>
+<body>
+    <div class="main">
+    <div class="arriba"><h2>Targeta de presentación</h2></div>
+    <div class="medio">Contenido del cuerpo de la targeta</div>
+    <div class="abajo"><h4>Pie de la targeta</h4></div>
+    </div>
+</body>
+</html>
